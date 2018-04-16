@@ -4,6 +4,8 @@
 const helpers = require('./helpers');
 const buildUtils = require('./build-utils');
 
+
+const webpack = require('webpack');
 /**
  * Used to merge webpack configs
 */
@@ -139,6 +141,11 @@ module.exports = function (env) {
      * See: https://webpack.js.org/configuration/plugins/
      */
     plugins: [
+
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery'
+      }),
 
       new SourceMapDevToolPlugin({
         filename: '[file].map[query]',

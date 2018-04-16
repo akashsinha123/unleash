@@ -1,37 +1,77 @@
-<div>
-  <h1 x-large class="sample-content">Your Content Here</h1>
+<div class="ombd">
+  <div class="maxWidth">
+    <div class="homd">
+      <div class="hid">
+        <a href="" class="inherit"><img src="../../assets/img/gettyimages-564948427-1523564556.jpg?crop=0.668xw:1.00xh;0.138xw,0&resize=480:*" alt="odfvo" class="hfi"></a>
+        <h2 class="hfit"><a href="" class="inherit">The 20 Best Glute Exercises To Build Your Butt</a></h2>
+      </div>
+      <div class="hid2">
+        <div class="hfsi">
+          <div class="hfsiiI">
+            <a href="" class="inherit"><img src="../../assets/img/screen-shot-2018-04-12-at-12-00-32-pm-1523549037.png?crop=1.00xw:0.738xh;0,0.0660xh&resize=480:*" alt="sdv" class="hfsiiAI"></a>
+          </div>
+          <div class="hfsiiT">
+            <h3 class="hfsiTh"><a href="" class="inherit">Thor And Usain Bolt Strike Your Speed Workout</a></h3>
+            <p class="hfsiTp">The God of Thunder and Lightning Bolt are a match made in super-spee…</p>
+          </div>
+        </div>
+        <div class="hfsi">
+          <div class="hfsiiI">
+            <a href="" class="inherit"><img src="../../assets/img/gettyimages-748339937-1523478608.jpg?crop=1.00xw:0.752xh;0,0.190xh&resize=480:*" alt="sdv" class="hfsiiAI"></a>
+          </div>
+          <div class="hfsiiT">
+            <h3 class="hfsiTh"><a href="" class="inherit">Thor And Usain Bolt Strike Your Speed Workout</a></h3>
+            <p class="hfsiTp">The God of Thunder and Lightning Bolt are a match made in super-spee…</p>
+          </div>
+        </div>
+        <div class="hfsi">
+          <div class="hfsiiI">
+            <a href="" class="inherit"><img src="../../assets/img/gettyimages-168583123-1523465250.jpg?crop=1xw:0.77783203125xh;center,top&resize=480:*" alt="sdv" class="hfsiiAI"></a>
+          </div>
+          <div class="hfsiiT">
+            <h3 class="hfsiTh"><a href="" class="inherit">Thor And Usain Bolt Strike Your Speed Workout</a></h3>
+            <p class="hfsiTp">The God of Thunder and Lightning Bolt are a match made in super-spee…</p>
+          </div>
+        </div>
+        <div class="hfsi">
+          <div class="hfsiiI">
+            <a href="" class="inherit"><img src="../../assets/img/gettyimages-740528369-1-1523464385.jpg?crop=1.00xw:0.752xh;0,0.0745xh&resize=480:*" alt="sdv" class="hfsiiAI"></a>
+          </div>
+          <div class="hfsiiT">
+            <h3 class="hfsiTh"><a href="" class="inherit">Thor And Usain Bolt Strike Your Speed Workout</a></h3>
+            <p class="hfsiTp">The God of Thunder and Lightning Bolt are a match made in super-spee…</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flsc">
+      <div class="flscic">
+        <a href="" class="inherit"><img src="../../assets/img/gettyimages-946009442-1523631875.jpg" alt="" class="flscicI"></a>
+      </div>
+      <div class="tagdc">
+        <div class="tag"><a href="" class="inherit">FITNESS</a></div>
+        <div class="tjl"></div>
+      </div>
+      <h2 class="flscich"><a href="" class="inherit">How To Summon Chris Hemsworth and Usain Bolt's Power of Lightning Speed</a></h2>
+      <p class="flscicp"><a href="" class="inherit">The God of Thunder and Lightning Bolt are a match made in super-speed heaven.</a></p>
+      <p class="flscica">BY <span class="flscicasp"><a href="" class="inherit">BRETT WILLIAMS</a></span></p>
+    </div>
 
-  <hr>
+    <div class="s3omc" *ngFor="let person of people; let i = index">
+      <div class="s3lc">
+        <div class="tagC">
+          <h3 class="tagtext"><a href="" class="inherit">FITNESS</a></h3>
+          <div class="tagline"></div>
+        </div>
+        <h2 class="s3bh"><a href="" class="inherit">The 20 Best Workout Moves To Build Your Butt</a></h2>
+        <p class="s3np">Target your money maker -- and your body's largest and most powerful muscle group, the glutes -- with these expert-approved moves.</p>
+        <p class="s3a">BY <span class="s3as"><a href="" class="inherit">THE EDITORS OF MEN'S HEALTH</a></span></p>
+      </div>
+      <div class="s32c">
+        <img src="../../assets/img/chris-1521651199.gif" alt="" class="s3ri">
+      </div>
+    </div>
 
-  <div>
-    For hot module reloading run
-    <pre>npm run start:hmr</pre>
+
   </div>
-
-  <hr>
-
-  <div>
-    <h4>Local State</h4>
-
-    <form (ngSubmit)="submitState(localState.value)" autocomplete="off">
-
-      <input
-        [value]="localState.value"
-        (input)="localState.value = $event.target.value"
-        placeholder="Submit Local State to App State"
-        autofocus>
-
-      <button>Submit Value</button>
-    </form>
-    <!--
-        <input type="text" [value]="localState.value" (input)="localState.value = $event.target.value" autofocus>
-        Rather than wiring up two-way data-binding ourselves with [value] and (input)
-        we can use Angular's [(ngModel)] syntax
-        <input type="text" name="textInput" [(ngModel)]="localState.value" autofocus>
-      -->
-
-    <pre>this.localState = {{ localState | json }}</pre>
-
-  </div>
-
 </div>

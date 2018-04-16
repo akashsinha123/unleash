@@ -6,7 +6,7 @@ const helpers = require('./helpers');
 const buildUtils = require('./build-utils');
 const webpackMerge = require('webpack-merge'); // used to merge webpack configs
 const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev
-
+const webpack = require('webpack');
 /**
  * Webpack Plugins
  */
@@ -106,6 +106,11 @@ module.exports = function (options) {
     },
 
     plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery'
+      }),
+
       new EvalSourceMapDevToolPlugin({
         moduleFilenameTemplate: '[resource-path]',
         sourceRoot: 'webpack:///'

@@ -3,7 +3,7 @@
  */
 
 const helpers = require('./helpers');
-
+const webpack = require('webpack');
 /**
  * Webpack Plugins
  */
@@ -190,6 +190,12 @@ module.exports = function (options) {
        *
        * NOTE: when adding more properties make sure you include them in custom-typings.d.ts
        */
+
+       new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery'
+      }),
+
       new DefinePlugin({
         'ENV': JSON.stringify(ENV),
         'HMR': false,

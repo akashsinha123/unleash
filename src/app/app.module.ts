@@ -15,10 +15,14 @@ import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
 import { HomeComponent } from './home';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { NavComponent } from './nav/nav.component';
 import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
 import { DevModuleModule } from './+dev-module';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
@@ -42,6 +46,9 @@ interface StoreType {
   bootstrap: [ AppComponent ],
   declarations: [
     AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    NavComponent,
     AboutComponent,
     HomeComponent,
     NoContentComponent,
@@ -55,6 +62,7 @@ interface StoreType {
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
+    AngularFontAwesomeModule,
     RouterModule.forRoot(ROUTES, {
       useHash: Boolean(history.pushState) === false,
       preloadingStrategy: PreloadAllModules
