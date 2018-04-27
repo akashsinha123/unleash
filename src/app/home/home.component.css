@@ -141,6 +141,10 @@
   width: 82%;
 }
 
+.hfit, .hfsiTh, .flscich, .s3bh {
+  color: #565a5c;
+}
+
 .flscich, .s3bh {
   margin: 4px 0px;
   font-size: 30px;
@@ -160,13 +164,18 @@
   font-size: 21px;
 }
 
-.flscica, .s3a {
-  color: #333;
+.flscica, .s3a, .hfiad {
+  color: #565a5c;
 }
 
-.flscicasp:hover, .s3as:hover {
+.flscicasp:hover, .s3as:hover, .hfiad:hover {
   color: #ff6318;
   cursor: pointer;
+}
+
+.hfiad {
+  display: none;
+  margin-top: 9px;
 }
 
 .s3omc {
@@ -198,11 +207,108 @@
   }
 }
 
+@media (max-width: 1110px) {
+  .hfsiTh {
+    font-size: 19px;
+  }
+  .hfsiTp {
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-top: 6px;
+  }
+  .hfit {
+    font-size: 24px;
+  }
+  .flscich, .s3bh {
+    font-size: 27px;
+  }
+
+  .flscicp, .s3np {
+    font-size: 18px;
+  }
+  .flscica, .s3a {
+    font-size: 16px;
+  }
+  .tjl {
+    width: 84%;
+  }
+  .tagline {
+    width: 79%;
+  }
+  .s3a {
+    margin: 9px 0;
+  }
+}
+
+@media (max-width: 920px) {
+  .tjl {
+    width: 82%;
+  }
+  .tagline {
+    width: 75%;
+  }
+  .hfsiTp {
+    display: none;
+  }
+}
+
 
 
 @media (max-width: 900px) {
   .maxWidth {
     width: 96%;
+  }
+  .s3a {
+    display: none;
+  }
+  .s3omc {
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .tjl {
+    width: 80%;
+  }
+  .tagline {
+    width: 71%;
+  }
+  .s3lc {
+    padding-right: 1%;
+  }
+  .flscica, .s3a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  .hfsiTh {
+    font-size: 17px;
+    margin: 0;
+  }
+  .hfit {
+    font-size: 21px;
+    margin-bottom: 0;
+  }
+  .flscich {
+    font-size: 24px;
+  }
+  .flscicp {
+    font-size: 16px;
+  }
+  .flscica {
+    font-size: 14px;
+  }
+  .s3bh {
+    font-size: 24px;
+    margin-top: 9px;
+    margin-bottom: 6px;
+  }
+  .s3np {
+    font-size: 16px;
+  }
+  .tag, .tagtext {
+    font-size: 15px;
   }
 }
 
@@ -210,4 +316,169 @@
   .maxWidth {
     width: 98%;
   }
+
+  .s3bh {
+    font-size: 22px;
+  }
+
+  .s3np {
+    margin-bottom: 0;
+  }
+
 }
+
+@media (max-width: 620px) {
+  .maxWidth {
+    width: 100%;
+  }
+
+  .homd {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hid {
+    width: 100%;
+    text-align:center;
+    margin: 0;
+  }
+
+  .hid2 {
+    display: block;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .hfit, .hfsiTh, .flscich, .s3bh {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 21px;
+    margin-bottom: 4px;
+  }
+
+  .hfsiTp, .flscicp, .s3np {
+    display: block;
+    font-size: 16px;
+  }
+
+  .hfiad, .flscica, .s3a {
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+
+  .flscica {
+    margin-top: 9px;
+  }
+  
+  .hfsi {
+    overflow: hidden;
+  }
+
+  .hfsiiI {
+    width: 100%;
+  }
+
+  .hfsiiT {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .hfsiTh {
+    text-align: center;
+  }
+
+  .s3omc {
+    margin: 0;
+  }
+
+  .tagdc {
+    display: none;
+  }
+
+  .flsc {
+    margin: 0;
+    text-align: center;
+  }
+
+  .flscic, .tagdc, .flscich, .flscicp, .flscica {
+    width: 100%;
+  }
+
+  .flscicp {
+    margin-bottom: 0;
+  }
+
+  .s3lc {
+    width: 100%;
+    padding: 0;
+    display: table-footer-group!important;
+    float: none;
+    text-align: center;
+  }
+
+  .s32c {
+    width: 100%;
+    display: table-header-group!important;
+    float: none;
+  }
+
+  .hfsi {
+    margin: 0;
+  }
+
+  .tagC {
+    display: none;
+  }
+
+  .hid , .hid2, .flsc, .s3omc, .hfsi {
+    margin-bottom: 30px;
+  }
+
+  .hfit, .hfsiTh, .flscich, .s3bh {
+    max-width: 84%;
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+
+  .hfiad, .flscica, .s3a {
+    max-width: 84%;
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+
+  .hfsiTp, .flscicp, .s3np {
+    max-width: 84%;
+    margin-left: auto!important;
+    margin-right: auto!important;
+  }
+
+
+}
+
+@media (max-width: 500px) {
+  .hfit, .hfsiTh, .flscich, .s3bh {
+    font-size: 22px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+  }
+
+  .hfiad, .flscica, .s3a {
+    font-size: 13px;
+  }
+
+  .hfsiTp, .flscicp, .s3np {
+    font-size: 13px;
+  }
+
+  .hid , .hid2, .flsc, .s3omc, .hfsi {
+    margin-bottom: 24px;
+  }
+
+}
+
+
+
+
+
